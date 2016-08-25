@@ -1,7 +1,6 @@
 package com.company;
 
-import com.company.GsonExamples.GsonExample1;
-import com.company.GsonExamples.GsonExample2;
+import com.company.GsonExamples.GsonExample2_Deserializer;
 import com.company.nasserver.NasFtp;
 
 import java.io.*;
@@ -97,7 +96,7 @@ public class Main {
 
         //************************   Gson testing *******************************************
         //GsonExample1.gSonTest1();   // working
-        GsonExample2.SimpleExample21();     // working
+        GsonExample2_Deserializer.SimpleExample21();     // working
         //TradeRecordsReader.readTradeRecors();  // waiting
     }
 
