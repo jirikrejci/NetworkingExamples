@@ -1,6 +1,7 @@
 package com.company;
 
 import com.company.GsonExamples.GsonExample1;
+import com.company.GsonExamples.GsonExample2;
 import com.company.nasserver.NasFtp;
 
 import java.io.*;
@@ -95,9 +96,9 @@ public class Main {
        // NasFileSystem.writeTextToFileWinFs("c:/DevFiles/WrittenFile.txt", "Aho jirko, tohle je zapsaný text");
 
         //************************   Gson testing *******************************************
-        GsonExample1.gSonTest1();
-        //GsonExample1.gsonTest2();
-        //TradeRecordsReader.readTradeRecors();
+        //GsonExample1.gSonTest1();   // working
+        GsonExample2.SimpleExample21();     // working
+        //TradeRecordsReader.readTradeRecors();  // waiting
     }
 
 

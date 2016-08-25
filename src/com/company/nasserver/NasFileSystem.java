@@ -12,16 +12,14 @@ public class NasFileSystem extends NasGeneral
 
 {
 
-    public static void readTextFileFromWinFs(String filename) {
+    public static String readTextFileFromWinFs(String filename) {
         try {
             InputStream inputStream = new FileInputStream(filename);
             String outputStr = readStreamToString(inputStream);
-            System.out.println("Výpis načteného souboru:");
-            System.out.println(outputStr);
-
-
+            return (outputStr);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
+            return(e.toString());
         }
     }
 
