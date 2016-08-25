@@ -22,12 +22,5 @@ public class GsonExample2_Deserializer {
 
         Book book = gson.fromJson(jsonText, Book.class);
         System.out.println(book);
-
-
-
     }
-
-
-
-
 }

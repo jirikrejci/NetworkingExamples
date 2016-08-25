@@ -10,8 +10,8 @@ import java.lang.reflect.Type;
  */
 public class BookDeserializer implements JsonDeserializer  {
     @Override
-    public Book deserialize(JsonElement jsonElement, Type type, JsonDeserializationContext jsonDeserializationContext) throws JsonParseException {
-
+    public Book deserialize(final JsonElement jsonElement, final Type type, final JsonDeserializationContext jsonDeserializationContext) throws JsonParseException {
+        // proč všude používá final, to je mi záhadou
 
         final JsonObject jsonObject = jsonElement.getAsJsonObject();
         JsonElement titleElement = jsonObject.get ("title");
