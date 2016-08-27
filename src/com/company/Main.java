@@ -1,7 +1,7 @@
 package com.company;
 
-import com.company.GsonExamples.GsonExample2_Deserializer;
-import com.company.nasserver.NasFtp;
+import com.company.GeneralClasses.PropertyManager;
+import com.company.nasserver.ResourcesM;
 
 import java.io.*;
 import java.net.*;
@@ -82,7 +82,8 @@ public class Main {
 
        // NasFileSystem.readTextFileFromWinFs("file://c:/DevFiles/RelevantTradesJSON.txt");
        // NasFileSystem.readTextFileFromWinFs("R:/RelevantTradesJSON.txt");
-        inputStr = NasFtp.readFileFromFtp("/FilesDB/RelevantTradesJSON.txt");  // OK
+    //
+// s tímhle pracujeme        //  inputStr = NasFtp.readFileFromFtp("/FilesDB/RelevantTradesJSON.txt");  // OK
         // NasFtp.writeStringToFtp("/FilesDB/WrittenTextFile.txt", "Ahoj, tohle je soubor zapsaný přes FTP");
 
 
@@ -96,8 +97,16 @@ public class Main {
 
         //************************   Gson testing *******************************************
         //GsonExample1.gSonTest1();   // working
-        GsonExample2_Deserializer.SimpleExample21();     // working
+        //GsonExample2_Deserializer.SimpleExample21();     // working
         //TradeRecordsReader.readTradeRecors();  // waiting
+
+
+
+
+    PropertyManager.showTestsAll();
+        String jsonStr = ResourcesM.readResourceToString("/resources/resource_example.json");
+        System.out.print(jsonStr);
+
     }
 
 
