@@ -1,6 +1,10 @@
 package com.company;
 
 import com.company.GeneralClasses.PropertyManager;
+import com.company.GsonExamples.GsonExample1;
+import com.company.GsonExamples.GsonExample2_Deserializer;
+import com.company.GsonExamples.GsonExample3_Anotations;
+import com.company.GsonExamples.TradeRecordsReader;
 import com.company.nasserver.ResourcesM;
 
 import java.io.*;
@@ -96,16 +100,15 @@ public class Main {
        // NasFileSystem.writeTextToFileWinFs("c:/DevFiles/WrittenFile.txt", "Aho jirko, tohle je zapsaný text");
 
         //************************   Gson testing *******************************************
-        //GsonExample1.gSonTest1();   // working
-        //GsonExample2_Deserializer.SimpleExample21();     // working
-        //TradeRecordsReader.readTradeRecors();  // waiting
+      //  GsonExample1.gSonTest1();   // working
+       // GsonExample2_Deserializer.SimpleExample21();     // working
+       // TradeRecordsReader.readTradeRecors();  // waiting
+        GsonExample3_Anotations.simpleExample31();
 
 
 
-
-    PropertyManager.showTestsAll();
-        String jsonStr = ResourcesM.readResourceToString("/resources/resource_example.json");
-        System.out.print(jsonStr);
+//    PropertyManager.showTestsAll();   working
+        //jsonStr = ResourcesM.readResourceToString("/resources/resource_example.json");
 
     }
 

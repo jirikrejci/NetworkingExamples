@@ -26,23 +26,18 @@ public class TradeRecord {
     public String getSymbol() {
         return symbol;
     }
-
     public void setSymbol(String symbol) {
         this.symbol = symbol;
     }
-
     public Double getLevelPrice() {
         return levelPrice;
     }
-
     public void setLevelPrice(Double levelPrice) {
         this.levelPrice = levelPrice;
     }
-
     public String getDirection() {
         return direction;
     }
-
     public void setDirection(String direction) {
         this.direction = direction;
     }

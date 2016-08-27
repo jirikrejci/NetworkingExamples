@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Created by Jirka on 25.8.2016.
  */
 
-public class RelevantTradesExch {
+public class RelevantTradesExch01 {
 
     private String datum = "xxxdatum";
     ArrayList<TradeRecord> tradeRecords = new ArrayList<TradeRecord>();

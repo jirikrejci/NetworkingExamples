@@ -1,6 +1,6 @@
 package com.company.GsonExamples;
 
-import com.company.DataStructures.RelevantTradesExch;
+import com.company.DataStructures.RelevantTradesExch01;
 import com.company.DataStructures.TradeRecord;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -44,31 +44,31 @@ public class GsonExample1 {
 
 
         // to JSON Class s ArrayListem objektů
-        RelevantTradesExch relevantTradesExch = new RelevantTradesExch();
+        RelevantTradesExch01 relevantTradesExch01 = new RelevantTradesExch01();
 
-        relevantTradesExch.addTradeRecord(trdRec0);
-        relevantTradesExch.addTradeRecord(trdRec1);
-        relevantTradesExch.addTradeRecord(trdRec2);
-        relevantTradesExch.setDatum("25.8.2016");
+        relevantTradesExch01.addTradeRecord(trdRec0);
+        relevantTradesExch01.addTradeRecord(trdRec1);
+        relevantTradesExch01.addTradeRecord(trdRec2);
+        relevantTradesExch01.setDatum("25.8.2016");
 
-        relevantTradesExch.addTradeRecord(trdRec0);
+        relevantTradesExch01.addTradeRecord(trdRec0);
 
         System.out.println("\nRelevantTradesExchange object - JSON");
-        gson.toJson(relevantTradesExch, System.out);
+        gson.toJson(relevantTradesExch01, System.out);
 
         // převod JSON na text
         String jsonText;
-        jsonText = gson.toJson(relevantTradesExch, RelevantTradesExch.class);
+        jsonText = gson.toJson(relevantTradesExch01, RelevantTradesExch01.class);
         System.out.println("\nTraderecords form Class/Object převedené na String");
         System.out.println(jsonText);
 
         //*******************  pozor - zpětná konverze **************************************
-        //RelevantTradesExch inputRecords;
+        //RelevantTradesExch01 inputRecords;
        // gson.fromJson(jsonText, inputRecords);
 
-        RelevantTradesExch trdRecords2;
-        trdRecords2 = gson.fromJson(jsonText, RelevantTradesExch.class);
-        System.out.println("Po načtení jsonStr zpět na objekt RelevantTradesExch - zobrazeno přes toString()");
+        RelevantTradesExch01 trdRecords2;
+        trdRecords2 = gson.fromJson(jsonText, RelevantTradesExch01.class);
+        System.out.println("Po načtení jsonStr zpět na objekt RelevantTradesExch01 - zobrazeno přes toString()");
         System.out.println( trdRecords2);
     }
 
