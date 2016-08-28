@@ -21,9 +21,9 @@ public class GsonExample3_Anotations {
 
         Boxes boxes = new Boxes();
 
-        Box box1 = new Box(10, 110, 100);
-        Box box2 = new Box(20, 210, 200);
-        Box box3 = new Box(30, 310, 300);
+        Box box1 = new Box(10, 110, 100, "Box č.1");
+        Box box2 = new Box(20, 210, 200, "Box č. 2");
+        Box box3 = new Box(30, 310, 300, "Box č. 3");
 
         boxes.addBox(box1);
         boxes.addBox(box2);

@@ -1,14 +1,40 @@
 package com.company.DataStructures;
 
+import com.google.gson.annotations.SerializedName;
+
 /**
  * Created by Jirka on 25.8.2016.
  */
 public class TradeRecord {
 
     // private memmbers
-    private String symbol;
-    private Double levelPrice;
-    private String direction;
+    @SerializedName("ID")
+    Long id;
+
+    @SerializedName("Symbol")
+    String symbol;
+
+    @SerializedName("Direction")
+    String direction;
+
+    @SerializedName("Status")
+    String status;
+
+    @SerializedName("Level Price")
+    double levelPrice;
+
+    @SerializedName("Order status")
+    String orderStatus;
+
+    @SerializedName("Order #")
+    Long orderNumber;
+
+    @SerializedName("Method")
+    String method;
+
+    @SerializedName("Req Result")
+    String requestResult;
+
 
     //constructor
 
@@ -47,7 +73,10 @@ public class TradeRecord {
     @Override
     public String toString() {
         String output_str ="";
-        output_str = "Trade> Symbol: " + symbol + ",tlevelPrice: " + levelPrice + ",direction: " + direction;
+        output_str = "\nTrade> " + symbol +
+                "\t " + String.format("%8.4f", levelPrice) +
+                "\t" + direction +
+                "\t" +  requestResult;
 
         return output_str;
     }
@@ -61,5 +90,7 @@ public class TradeRecord {
 
         return output_str;
     }
+
+
 
 }

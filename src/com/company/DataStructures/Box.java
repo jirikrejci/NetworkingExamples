@@ -15,18 +15,24 @@ public class Box {
     @SerializedName("box depth")
     private int depth;
 
+    @SerializedName("box label")
+    private String label;
     // methods removed for brevity
 
 
-    public Box(int width, int height, int depth) {
+    public Box(int width, int height, int depth, String label) {
         this.width = width;
         this.height = height;
         this.depth = depth;
+        this.label = label;
     }
+
+
 
     @Override
     public String toString() {
         return "Box{" +
+                "label=" + label +
                 "width=" + width +
                 ", height=" + height +
                 ", depth=" + depth +

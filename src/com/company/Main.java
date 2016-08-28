@@ -102,8 +102,9 @@ public class Main {
         //************************   Gson testing *******************************************
       //  GsonExample1.gSonTest1();   // working
        // GsonExample2_Deserializer.SimpleExample21();     // working
-       // TradeRecordsReader.readTradeRecors();  // waiting
-        GsonExample3_Anotations.simpleExample31();
+        TradeRecordsReader.readTradeRecors();  // waiting
+        //GsonExample3_Anotations.simpleExample31();  // working
+
 
 
 
