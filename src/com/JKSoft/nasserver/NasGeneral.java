@@ -1,4 +1,4 @@
-package com.company.nasserver;
+package com.JKSoft.nasserver;
 
 import java.io.*;
 

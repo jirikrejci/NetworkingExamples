@@ -1,11 +1,8 @@
-package com.company;
+package com.JKSoft;
 
-import com.company.GeneralClasses.PropertyManager;
-import com.company.GsonExamples.GsonExample1;
-import com.company.GsonExamples.GsonExample2_Deserializer;
-import com.company.GsonExamples.GsonExample3_Anotations;
-import com.company.GsonExamples.TradeRecordsReader;
-import com.company.nasserver.ResourcesM;
+import com.JKSoft.DataStructures.RelevantTradesExch;
+import com.JKSoft.GsonExamples.*;
+import com.JKSoft.nasserver.NasFtp;
 
 import java.io.*;
 import java.net.*;
@@ -102,7 +99,13 @@ public class Main {
         //************************   Gson testing *******************************************
       //  GsonExample1.gSonTest1();   // working
        // GsonExample2_Deserializer.SimpleExample21();     // working
-        TradeRecordsReader.readTradeRecors();  // waiting
+
+        RelevantTradesExch tradesExch;
+        tradesExch = TradeRecordsReader.readTradeRecors();  // waiting
+        NasFtp.writeStringToFtp("/FilesDB/RelevantTradesPretty.json", JsonConversions.getJSonPretty(tradesExch));
+
+
+
         //GsonExample3_Anotations.simpleExample31();  // working
 
 

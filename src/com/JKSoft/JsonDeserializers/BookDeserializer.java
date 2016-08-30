@@ -1,6 +1,6 @@
-package com.company.JsonDeserializers;
+package com.JKSoft.JsonDeserializers;
 
-import com.company.DataStructures.Book;
+import com.JKSoft.DataStructures.Book;
 import com.google.gson.*;
 
 import java.lang.reflect.Type;

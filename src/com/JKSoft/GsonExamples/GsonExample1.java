@@ -1,7 +1,7 @@
-package com.company.GsonExamples;
+package com.JKSoft.GsonExamples;
 
-import com.company.DataStructures.RelevantTradesExch01;
-import com.company.DataStructures.TradeRecord;
+import com.JKSoft.DataStructures.RelevantTradesExch01;
+import com.JKSoft.DataStructures.TradeRecord;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 

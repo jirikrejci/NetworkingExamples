@@ -1,4 +1,4 @@
-package com.company.nasserver;
+package com.JKSoft.nasserver;
 
 import org.apache.commons.net.ftp.FTP;
 import org.apache.commons.net.ftp.FTPClient;
@@ -19,7 +19,7 @@ public class NasFtp extends NasGeneral{
         FTPClient ftpClient = new FTPClient();
         try {
             ftpClient.connect("192.168.0.10", 21);
-            ftpClient.login("jirka", "jirkapass");
+            ftpClient.login("trader", "traderpass");
             ftpClient.enterLocalPassiveMode();
             ftpClient.setFileType(FTP.ASCII_FILE_TYPE);
 
@@ -61,17 +61,17 @@ public class NasFtp extends NasGeneral{
 
             //System.out.println(ftpClient.getStatus().toString());
 
-            InputStream inputStream = ftpClient.retrieveFileStream(remoteFileName);
+
             OutputStream outputStream = ftpClient.storeFileStream(remoteFileName);
 
             writeStringToStream(outputStream, textToWrite);
             outputStream.flush();
             outputStream.close();
+            success = ftpClient.completePendingCommand();
             ftpClient.disconnect();
 
-            success = ftpClient.completePendingCommand();
             if (success) {
-                System.out.println("File #2 has been uploaded successfully.");
+                System.out.println("FIle has been succesfully uploaded to FTP");
             }
 
         } catch (IOException e) {

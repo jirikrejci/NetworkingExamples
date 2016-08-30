@@ -1,4 +1,4 @@
-package com.company.GeneralClasses;
+package com.JKSoft.GeneralClasses;
 
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -35,7 +35,7 @@ public class PropertyManager {
 
     public static void readPropertiesTest (){
         try {
-            //FileReader reader = new FileReader("com/company/nasserver/db.properties");
+            //FileReader reader = new FileReader("com/JKSoft/nasserver/db.properties");
             FileReader reader = new FileReader("test_conf.properties");
             java.util.Properties properties = new java.util.Properties();
             properties.load(reader);
@@ -54,7 +54,7 @@ public class PropertyManager {
         FileReader reader = null;
         String outputStr = null;
         try {
-            //FileReader reader = new FileReader("com/company/nasserver/db.properties");
+            //FileReader reader = new FileReader("com/JKSoft/nasserver/db.properties");
             reader = new FileReader("config.properties");
             java.util.Properties properties = new java.util.Properties();
             properties.load(reader);

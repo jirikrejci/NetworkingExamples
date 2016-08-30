@@ -1,8 +1,7 @@
-package com.company.GsonExamples;
+package com.JKSoft.GsonExamples;
 
-import com.company.DataStructures.RelevantTradesExch;
-import com.company.nasserver.NasFtp;
-import com.company.nasserver.ResourcesM;
+import com.JKSoft.DataStructures.RelevantTradesExch;
+import com.JKSoft.nasserver.NasFtp;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -17,8 +16,9 @@ public class TradeRecordsReader {
 
         Gson gson = new GsonBuilder().create();
         RelevantTradesExch relevantTradesExch = gson.fromJson(jsonStr, RelevantTradesExch.class);
-
+        System.out.println("Json:\n" + JsonConversions.getJSonPretty(relevantTradesExch));
         System.out.println(relevantTradesExch.toString());
+
         return relevantTradesExch;
     }
 }

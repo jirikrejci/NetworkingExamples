@@ -1,8 +1,8 @@
-package com.company.GsonExamples;
+package com.JKSoft.GsonExamples;
 
-import com.company.DataStructures.Book;
-import com.company.JsonDeserializers.BookDeserializer;
-import com.company.nasserver.NasFileSystem;
+import com.JKSoft.DataStructures.Book;
+import com.JKSoft.JsonDeserializers.BookDeserializer;
+import com.JKSoft.nasserver.NasFileSystem;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 

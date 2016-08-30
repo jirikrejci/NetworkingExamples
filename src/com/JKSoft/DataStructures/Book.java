@@ -1,4 +1,4 @@
-package com.company.DataStructures;
+package com.JKSoft.DataStructures;
 
 /**
  * Created by Jirka on 25.8.2016.

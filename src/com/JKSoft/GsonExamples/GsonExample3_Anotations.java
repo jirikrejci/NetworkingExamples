@@ -1,12 +1,10 @@
-package com.company.GsonExamples;
+package com.JKSoft.GsonExamples;
 
-import com.company.DataStructures.Box;
-import com.company.DataStructures.Boxes;
-import com.company.nasserver.ResourcesM;
+import com.JKSoft.DataStructures.Box;
+import com.JKSoft.DataStructures.Boxes;
+import com.JKSoft.nasserver.ResourcesM;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-
-import java.util.ArrayList;
 
 /**
  * Created by Jirka on 27.8.2016.

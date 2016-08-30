@@ -1,6 +1,6 @@
-package com.company.nasserver;
+package com.JKSoft.nasserver;
 
-import com.company.Main;
+import com.JKSoft.Main;
 
 import java.io.BufferedReader;
 import java.io.IOException;

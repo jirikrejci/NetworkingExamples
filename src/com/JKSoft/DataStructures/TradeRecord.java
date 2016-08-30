@@ -1,4 +1,4 @@
-package com.company.DataStructures;
+package com.JKSoft.DataStructures;
 
 import com.google.gson.annotations.SerializedName;
 
@@ -34,6 +34,11 @@ public class TradeRecord {
 
     @SerializedName("Req Result")
     String requestResult;
+
+    @SerializedName("Estimated Trade Status")
+    String estimatedTradeStatus;
+
+
 
 
     //constructor
@@ -76,7 +81,8 @@ public class TradeRecord {
         output_str = "\nTrade> " + symbol +
                 "\t " + String.format("%8.4f", levelPrice) +
                 "\t" + direction +
-                "\t" +  requestResult;
+                "\t" +  requestResult +
+                "\t" + estimatedTradeStatus;
 
         return output_str;
     }
