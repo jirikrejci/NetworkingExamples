@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Networking Examples:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Networking_Examples_jar</output-path>
+    <root id="archive" name="Networking Examples.jar">
+      <element id="module-output" name="Networking Examples" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.4/gson-2.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/commons-net/commons-net/3.3/commons-net-3.3.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

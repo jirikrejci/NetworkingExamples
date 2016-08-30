@@ -1,6 +1,6 @@
 package com.JKSoft.nasserver;
 
-import com.JKSoft.Main;
+import com.JKSoft.MainTrida;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -14,7 +14,7 @@ public class ResourcesM {
 
     public static String readResourceToString(String resourceName) {
 
-        InputStream inputStream = Main.class.getResourceAsStream(resourceName);
+        InputStream inputStream = MainTrida.class.getResourceAsStream(resourceName);
         BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
 
         StringBuilder strBuff = new StringBuilder(1024);

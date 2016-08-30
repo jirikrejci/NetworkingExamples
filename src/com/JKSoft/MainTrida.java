@@ -7,7 +7,7 @@ import com.JKSoft.nasserver.NasFtp;
 import java.io.*;
 import java.net.*;
 
-public class Main {
+public class MainTrida {
     public static final String URL_ZENTITY_LIBRARY = "http://www.lukaspetrik.cz/filemanager/tmp/reader/data.xml";
     public static final String FILE_NAME_LOCAL_RELEVANT_TRADES_JSON = "c:/DevFiles/RelevantTradesJSON.txt";
    // public static final String sURL = "http://www.seznam.cz/index.html";
